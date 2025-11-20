@@ -16,7 +16,7 @@ export default function LoginPage() {
     setError("");
 
     try {
-      const res = await fetch("http://localhost:8000/authenticate", {
+      const res = await fetch("https://banking-system-fastapi-backend.onrender.com//authenticate", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
