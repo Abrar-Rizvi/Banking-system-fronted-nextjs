@@ -24,7 +24,7 @@ export default function BalancePage() {
     setLoading(true);
     setError("");
     try {
-      const res = await fetch(`http://localhost:8000/balance/${user}`);
+      const res = await fetch(`https://banking-system-fastapi-backend.onrender.com/balance/${user}`);
       if (res.ok) {
         const data = await res.json();
         setBalance(data.balance);

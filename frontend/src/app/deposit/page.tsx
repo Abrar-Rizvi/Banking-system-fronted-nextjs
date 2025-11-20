@@ -49,7 +49,7 @@ export default function DepositPage() {
     }
 
     try {
-      const res = await fetch("http://localhost:8000/deposit", {
+      const res = await fetch("https://banking-system-fastapi-backend.onrender.com/deposit", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

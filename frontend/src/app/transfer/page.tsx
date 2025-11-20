@@ -51,7 +51,7 @@ export default function TransferPage() {
     }
 
     try {
-      const res = await fetch("http://localhost:8000/bank-transfer", {
+      const res = await fetch("https://banking-system-fastapi-backend.onrender.com/bank-transfer", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

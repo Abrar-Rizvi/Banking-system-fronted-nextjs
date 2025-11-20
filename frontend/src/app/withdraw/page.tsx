@@ -49,7 +49,7 @@ export default function WithdrawPage() {
     }
 
     try {
-      const res = await fetch("http://localhost:8000/withdraw", {
+      const res = await fetch("https://banking-system-fastapi-backend.onrender.com/withdraw", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
